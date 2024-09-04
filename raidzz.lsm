@@ -1,0 +1,20 @@
+Begin3
+Title:          raidzz
+Version:        v0.2
+Entered-date:   17-Mar-1999
+Description:    Error recovery library suitable for dual parity RAID.
+	This is the first release of this library.  It is experimental.
+	It impliments an algorithm that will allow recovery of 2 failures
+	over 15 channels of data.  It does this by computing 2 independant
+	pairty values that can be used together to recover 2 channels of
+	data given the remaining values.  It could be used to impliment
+	the RAID-5 equivalent of RAID-6.
+Keywords:       RAID-6 RAID ECC
+Author:         Gianni Mariani
+Maintained-by:  marianig@yahoo.com
+Primary-site:   10k ftp:://metalab.unc.edu/pub/Linux/libs/raidzz-v0.2.tar.gz
+Alternate-site: 
+Original-site:  
+Platforms:      Linux/egcs-2.91.60
+Copying-policy: GPL
+End
