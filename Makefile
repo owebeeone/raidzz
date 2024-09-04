@@ -14,10 +14,11 @@ raidzz_impl.o : raidzz_if.h
 raidzz_mktable : raidzz_mktable.c
 
 raidzz_table.c : raidzz_mktable
-		raidzz_mktable > raidzz_table.c
+		./raidzz_mktable > raidzz_table.c
 
+.PHONY : test
 test: raidzz_table.o
 		cc raidzz_mktable.c -DTEST=1 -o Traidzz_mktable raidzz_table.o
-		Traidzz_mktable > jnk
+		./Traidzz_mktable > jnk
 		cmp jnk raidzz_table.c
 

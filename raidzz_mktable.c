@@ -6,6 +6,7 @@
  */
 
 #include <stdio.h>
+#include <string.h>
 #include "raidzz_tabs.h"
 
 typedef unsigned char rzz_functab[ 0x10 ];
